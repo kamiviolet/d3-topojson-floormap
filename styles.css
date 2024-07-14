@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+#svg_container {
+    width: 80vw;
+    height: 100%;
+}
+
+.floormap {
+    width: 100%;
+    height: 100%;
+}
+
+.apartment {
+    fill: gray;
+}
+.areas, .entrances {
+    fill: white;
+
+    &>*:hover, &>*:active {
+        fill: orange;
+    }
+}
